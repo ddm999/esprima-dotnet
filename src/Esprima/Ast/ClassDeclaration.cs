@@ -14,6 +14,7 @@ namespace Esprima.Ast
         ClassBody IClass.Body => Body;
 
         public bool IsModule { get; set; }
+        public bool IsEnum { get; set; }
 
         public ClassDeclaration(Identifier? id, Expression? superClass, ClassBody body) :
             base(Nodes.ClassDeclaration)

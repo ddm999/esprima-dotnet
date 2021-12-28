@@ -2404,6 +2404,10 @@ namespace Esprima
                         statement = ParseClassDeclaration();
                         (statement as ClassDeclaration).IsModule = true;
                         break;
+                    case "enum":
+                        statement = ParseClassDeclaration();
+                        (statement as ClassDeclaration).IsEnum = true;
+                        break;
                     case "class":
                         statement = ParseClassDeclaration();
                         break;
